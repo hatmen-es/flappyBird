@@ -13,19 +13,5 @@ public class Columns : MonoBehaviour
             GameControl.instance.BirdScored();
         }
     }
-
-    using UnityEngine.UI;
-    public Text scoreText;
-    private int score = 0;
-    public void BirdScored()
-    {
-        if (gameOver)
-        {
-            return;
-        }
-        score++;
-        scoreText.text = "Score: " + score.ToString()
-    }
-    // Add scrolling script to columns
 }
 
